@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(120deg, #f6d365, #fea085);
+  color: white;
+  font-family: 'poppins', sans-serif;
+  min-height: 100vh;
+}
+
+body header {
+  font-size: 1.5rem;
+}
+
+body header, body form {
+  min-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body form input {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+  outline: none;
+}
+
+body form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+  color: #fea085;
+  cursor: pointer;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+body form button:hover {
+  background: #fea085;
+  color: white;
+}
+
+body form .select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+body form .select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border: none;
+  color: #ff6f47;
+  width: 10rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+body form .select::after {
+  content: "\25BC";
+  position: absolute;
+  background: #ff6f47;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+body form .select:hover::after {
+  background: white;
+  color: #ff6f47;
+}
+
+body .todo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .todo-container .todo-list {
+  min-width: 30%;
+  list-style-type: none;
+}
+
+body .todo {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+body .todo li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .fall {
+  -webkit-transform: translateY(8rem) rotateZ(20deg);
+          transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+body .trash-btn {
+  background: #ff6f47;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+body .complete-btn {
+  background: #61fa61;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+body .todo-item {
+  padding: 0rem 0.5rem;
+}
+
+body .fa-trash, body .fa-check {
+  pointer-events: none;
+}
+
+body .completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+/*# sourceMappingURL=style.css.map */
